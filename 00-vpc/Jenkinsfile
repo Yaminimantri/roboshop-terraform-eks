@@ -68,7 +68,7 @@ pipeline {
                 }
             }
         }
-        stage('Trigger SG') {
+        /* stage('Trigger SG') {
             steps {
                 script {
                     build job: '10-sg',
@@ -76,7 +76,7 @@ pipeline {
                         propagate: false // Propagate status
                 }
             }
-        }
+        } */
     }
     post{
         always{
